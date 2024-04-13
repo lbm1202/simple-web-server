@@ -4,7 +4,7 @@
 
 simple web server with c language
 
-use socket.h
+using socket.h
 
 pages
 - index : main page

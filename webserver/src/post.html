@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<h1>
+    POST
+</h1>
+    <form method="post" enctype="multipart/form-data">
+        <div id="t_space">
+        <input type='file' name='image'>
+        <p>add input<input type="button" value="add" onclick='add_textbox()'><br></p> 
+        
+        </div>
+        <input type="submit">
+    </form>
+<a href="./">Home</a>
+
+<script>
+    i  = 1;
+    String.prototype.format = function() {
+        var formatted = this;
+        for( var arg in arguments ) {
+            formatted = formatted.replace("{" + arg + "}", arguments[arg]);
+        }
+        return formatted;
+    };
+    function add_textbox(){
+        document.getElementById("t_space").innerHTML +=
+        "Input{0} <input type='text' name='text{2}' id='text{1}' > <br>".format(i,i,i);
+        i = i + 1;
+    };
+</script>
+

@@ -14,5 +14,6 @@ pages
 - 404 : for not implemented pages
 
 if request arrived at server, make thread (request handler)
+
 the request handler parse the input and print out the data according to the HTTP GET request.
 and make some HTTP header and body, send it client
